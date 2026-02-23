@@ -1,0 +1,103 @@
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
+
+function App() {
+  const [count, setCount] = useState(0)
+
+  return (
+    <>
+      {
+        <body>
+          <main class="site">
+            <header class="hero" id="top">
+              <div class="hero-inner">
+                <h1 class="title">Em Breve</h1>
+                <p class="subtitle">Estamos preparando algo especial para os amantes do golfe.</p>
+        
+                <div class="controls">
+                  <a class="btn primary" href="#galeria">Saiba Mais</a>
+                  <button class="btn outline" id="notifyBtn">Receba Novidades</button>
+                </div>
+        
+                <div class="countdown" id="countdown" aria-live="polite">
+                  <div><span id="days">--</span><small>Dias</small></div>
+                  <div><span id="hours">--</span><small>Horas</small></div>
+                  <div><span id="minutes">--</span><small>Min</small></div>
+                  <div><span id="seconds">--</span><small>Seg</small></div>
+                </div>
+              </div>
+            </header>
+        
+            <section class="gallery" id="galeria">
+              <h2 class="sr-only">Galeria de Imagens</h2>
+              <div class="grid">
+                <figure>
+                  <div class="carousel">
+                    <img class="active" aria-hidden="false" src="../img/campogolf1.jpg" alt="Campo de golfe verde" loading="lazy" />
+                    <img aria-hidden="true" src="../img/campogolf2.jpg" alt="Campo de golfe verde" loading="lazy" />
+                    <img aria-hidden="true" src="../img/campogolf3.jpg" alt="Campo de golfe verde" loading="lazy" />
+                    <img aria-hidden="true" src="../img/campogolf4.jpg" alt="Campo de golfe verde" loading="lazy" />
+                    <img aria-hidden="true" src="../img/campogolf5.jpg" alt="Campo de golfe verde" loading="lazy" />
+                    <img aria-hidden="true" src="../img/campogolf6.jpg" alt="Campo de golfe verde" loading="lazy" />
+                  </div>
+                  <figcaption>Campo de golfe</figcaption>
+                </figure>
+                
+                <figure>
+                  <div class="carousel">
+                    <img class="active" aria-hidden="false" src="../img/tacada1.jpg" alt="Jogador realizando uma tacada" loading="lazy" />
+                    <img aria-hidden="true" src="../img/tacada2.jpg" alt="Jogador realizando uma tacada" loading="lazy" />
+                    <img aria-hidden="true" src="../img/tacada3.jpg" alt="Jogador realizando uma tacada" loading="lazy" />
+                    <img aria-hidden="true" src="../img/tacada4.jpg" alt="Jogador realizando uma tacada" loading="lazy" />
+                    <img aria-hidden="true" src="../img/tacada5.jpg" alt="Jogador realizando uma tacada" loading="lazy" />
+                    <img aria-hidden="true" src="../img/tacada6.jpg" alt="Jogador realizando uma tacada" loading="lazy" />
+                  </div>
+                  <figcaption>Tacada perfeita</figcaption>
+                </figure>
+        
+                <figure>
+                  <div class="carousel">
+                    <img class="active" aria-hidden="false" src="../img/equipamentos1.jpg" alt="Equipamentos de golfe" loading="lazy" />
+                    <img aria-hidden="true" src="../img/equipamentos2.jpg" alt="Equipamentos de golfe" loading="lazy" />
+                    <img aria-hidden="true" src="../img/equipamentos3.jpg" alt="Equipamentos de golfe" loading="lazy" />
+                    <img aria-hidden="true" src="../img/equipamentos4.jpg" alt="Equipamentos de golfe" loading="lazy" />
+                    <img aria-hidden="true" src="../img/equipamentos5.jpg" alt="Equipamentos de golfe" loading="lazy" />
+                    <img aria-hidden="true" src="../img/equipamentos6.jpg" alt="Equipamentos de golfe" loading="lazy" />
+                  </div>
+                  <figcaption>Equipamentos</figcaption>
+                </figure>
+              </div>
+            </section>
+        
+            <footer class="site-footer">
+              <div class="footer-inner">
+                <div class="brand">Golf Prime Brasil</div>
+                <div class="cnpj">CNPJ: 12.345.678/0001-99</div>
+                <div class="copyright">© <span id="year"></span> Golf Prime Brasil — Todos os direitos reservados</div>
+              </div>
+            </footer>
+          </main>
+        
+          <div class="modal" id="modal" aria-hidden="true">
+            <div class="modal-content" role="dialog" aria-labelledby="modalTitle">
+              <button class="modal-close" id="modalClose" aria-label="Fechar">×</button>
+              <h3 id="modalTitle">Receba Novidades</h3>
+              <p>Insira seu e-mail e avisaremos quando lançarmos.</p>
+              <form id="notifyForm">
+                <input type="email" id="email" placeholder="seu@email.com" required>
+                <button class="btn primary" type="submit">Enviar</button>
+              </form>
+              <p class="note">Prometemos não enviar spam. Apenas atualizações importantes.</p>
+            </div>
+          </div>
+        
+          <script src="../javascript/script.js" defer></script>
+        </body>        
+      }
+    </>
+  )
+}
+
+export default App
