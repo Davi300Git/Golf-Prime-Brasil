@@ -63,3 +63,4 @@ Chrome, Firefox, Safari, Edge (últimas versões com suporte a CSS `aspect-ratio
 - [ ] Testes automatizados (Jest/Cypress).
 - [ ] SEO e meta tags (Open Graph, Twitter Card).
 - [ ] Compactar imagens (WebP, AVIF).
+- [ ] Transformar em um projeto React.
